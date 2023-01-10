@@ -1,3 +1,9 @@
+# Allocate Bitmap In Native Heap
+
+support Android 6.x - 7.x
+
+# Details
+
 参考 https://juejin.cn/post/7096059314233671694
 
 但是原文有各种问题，比如 Android5.x 的释放逻辑并不如文中所说
