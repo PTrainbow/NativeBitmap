@@ -16,6 +16,6 @@ support Android 6.x - 7.x
 
 # 
 
-后测试发现，因为众多老机器使用的事 armeabi 架构，而不是 armeabi-v7a 或者 v8a，shadowhook 无法生效，也会有 crash
+后测试发现，因为众多老机器使用的是 armeabi 架构，而不是 armeabi-v7a 或者 v8a，shadowhook 无法生效，也会有 crash
 
 所以，可以考虑换一种 hook 方法。
