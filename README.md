@@ -14,10 +14,4 @@ support Android 6.x - 7.x
 
 目前还在测试中，不确定是否存在稳定性问题，如要线上使用，需自测(顺便 star 一下呗)
 
-# 
-
-后测试发现，因为有一些老机器使用的是 armeabi 架构，而不是 armeabi-v7a 或者 v8a，shadowhook 无法生效，也会有 crash，需要增加过滤
-
-或者，如果想要完全兼容老设备的话，可以换一种 hook 方法。
-
-目前我们线上数据每天有不到1000台的 armeabi，目前先忽视了
+注意 `shadowhook 只支持 armeabi-v7a armeabi-v8a`
