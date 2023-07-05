@@ -14,4 +14,4 @@ support Android 6.x - 7.x
 
 目前还在测试中，不确定是否存在稳定性问题，如要线上使用，需自测(顺便 star 一下呗)
 
-注意 `shadowhook 只支持 armeabi-v7a armeabi-v8a`
+注意 `shadowhook 只支持 armeabi-v7a arm64-v8a`
