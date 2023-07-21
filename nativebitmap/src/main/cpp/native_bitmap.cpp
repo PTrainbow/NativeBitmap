@@ -10,11 +10,11 @@
 /**
  * inline hook
  * JavaPixelAllocator
- * 5.1-7.1 _ZN18JavaPixelAllocator13allocPixelRefEP8SkBitmapP12SkColorTable
+ * 5.1-7.1 _ZN11GraphicsJNI20allocateJavaPixelRefEP7_JNIEnvP8SkBitmapP12SkColorTable
  */
 static void* hookJavaPixelAllocator() {
     void *allocatorStub = shadowhook_hook_sym_name(
-            "libandroid_runtime.so", "_ZN18JavaPixelAllocator13allocPixelRefEP8SkBitmapP12SkColorTable",
+            "libandroid_runtime.so", "_ZN11GraphicsJNI20allocateJavaPixelRefEP7_JNIEnvP8SkBitmapP12SkColorTable",
             (void *) BitmapHook::allocateJavaPixelRefProxy,
             (void **) &BitmapHook::allocateJavaPixelRefOrigin
     );
